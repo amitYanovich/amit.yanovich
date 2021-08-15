@@ -1,0 +1,72 @@
+:root {
+    --mycolor: rgb(175, 221, 240);
+    }
+    
+body {
+    background-image: url(Ex2_background.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family: Arial, Helvetica, sans-serif;
+    Font-size: 20PX ;
+}
+
+h1 {
+    color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
+    Font-size: 20PX ;
+    
+}
+
+from {
+    color: blanchedalmond;
+}
+
+h2 {
+    color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
+    Font-size: 20PX ;
+    
+}
+
+.grid-container{
+    display: grid;
+    background-color: var(--mycolor);
+    font-family: Arial, Helvetica, sans-serif;
+    Font-size: 20PX ;
+}
+
+.Educatuon {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    background-color: var(--mycolor);
+    padding: 10px;
+}
+
+.Work_Experience {
+    grid-column: 2/2;
+    grid-row: 1/1;
+    background-color: var(--mycolor);
+    padding: 10px;
+}
+
+.Personal_info {
+    grid-column: 3/3;
+    grid-row: 1/1;
+    background-color: var(--mycolor);
+    padding: 10px;
+}
+
+.Hobbies {
+    grid-column: 3/3;
+    grid-row: 1/1;
+    background-color: var(--mycolor);
+    padding: 10px;
+}
+
+.Social_and_Community_Activity {
+    grid-column: 4/4;
+    grid-row: 1/1;
+    background-color: var(--mycolor);
+    padding: 10px;
+}
+

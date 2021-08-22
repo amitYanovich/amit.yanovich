@@ -1,9 +1,9 @@
 :root {
-    --mycolor: rgb(175, 221, 240);
-    }
-    
+    --myColor: rgb(60, 179, 113, 0.2) ;
+} 
+
 body {
-    background-image: url(Ex2_background.jpg);
+    background-image: url(Backround.jpg.crdownload);
     background-repeat: no-repeat;
     background-size:cover;
     font-family: Arial, Helvetica, sans-serif;
@@ -11,62 +11,60 @@ body {
 }
 
 h1 {
-    color: blanchedalmond;
-    font-family: Arial, Helvetica, sans-serif;
-    Font-size: 20PX ;
-    
-}
-
-from {
-    color: blanchedalmond;
+    color: lightseagreen ;
+    text-align: center;
+    font-family: Cursive ;
+    Font-size: 40PX ;    
 }
 
 h2 {
-    color: blanchedalmond;
-    font-family: Arial, Helvetica, sans-serif;
+    color: lightseagreen;
+    text-align: center;
+    font-family: Cursive ;
+    Font-size: 40PX ;
+}
+
+from {
+    color: black;
+    text-align: left;
+    font-family: Garamond, serif;  
     Font-size: 20PX ;
-    
+    font-weight: bold;
+    position: relative;
+    animation-name: EX_3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
 .grid-container{
     display: grid;
-    background-color: var(--mycolor);
-    font-family: Arial, Helvetica, sans-serif;
-    Font-size: 20PX ;
+    grid-template-areas: 'Education WorkExperience Personalinfo Hobbies SocialandCommunityActivity';
+    background-color: var(--myColor);
+    font-family: Garamond, serif;
+    font-weight: bold;  
 }
 
-.Educatuon {
-    grid-column: 1/1;
-    grid-row: 1/1;
-    background-color: var(--mycolor);
-    padding: 10px;
+.Education {
+   grid-area: Education; 
 }
 
 .Work_Experience {
-    grid-column: 2/2;
-    grid-row: 1/1;
-    background-color: var(--mycolor);
-    padding: 10px;
+  grid-area: WorkExperience; 
 }
 
 .Personal_info {
-    grid-column: 3/3;
-    grid-row: 1/1;
-    background-color: var(--mycolor);
-    padding: 10px;
+    grid-area: Personalinfo; 
 }
 
 .Hobbies {
-    grid-column: 3/3;
-    grid-row: 1/1;
-    background-color: var(--mycolor);
-    padding: 10px;
+    grid-area: Hobbies; 
 }
 
 .Social_and_Community_Activity {
-    grid-column: 4/4;
-    grid-row: 1/1;
-    background-color: var(--mycolor);
-    padding: 10px;
+    grid-area: SocialandCommunityActivity; 
 }
 
+@keyframes EX_3 {
+    from {left: 0px;}
+    to {left: 800px;}
+}

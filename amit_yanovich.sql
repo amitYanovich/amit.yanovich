@@ -7,7 +7,7 @@ use `amit_yanovich`;
 
 -- Table structure for table `users`
 --
-DROP TABLE IF EXISTS `users`;
+;
 CREATE TABLE `users` (
   `id` int(100) NOT NULL AUTO_INCREMENT,
   `userID` int(100) NOT NULL,
